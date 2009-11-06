@@ -4,9 +4,7 @@ Created on Oct 15, 2009
 @author: blueAnt
 '''
 
-import hou
-
-class Dissolve(hou.Node):
+class Dissolve():
     '''
     Dissolve surface node
     '''

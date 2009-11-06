@@ -4,9 +4,7 @@ Created on Oct 14, 2009
 @author: blueAnt
 '''
 
-import hou
-
-class PolyExtrude(hou.Node):
+class PolyExtrude():
     '''
     PolyExtrude surface node
     '''

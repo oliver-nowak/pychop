@@ -4,9 +4,7 @@ Created on Oct 18, 2009
 @author: blueAnt
 '''
 
-import hou
-
-class Triangulate2D(hou.Node):
+class Triangulate2D():
     '''
     Triangulate2D surface node
     '''

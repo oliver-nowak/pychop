@@ -4,12 +4,10 @@ Created on Oct 14, 2009
 @author: blueAnt
 '''
 
-import hou
-
 if __name__== '__main__':
     pass
 
-class PolyBevel(hou.Node):
+class PolyBevel():
     '''
     Poly Bevel surface node
     

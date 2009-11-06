@@ -4,9 +4,7 @@ Created on Oct 14, 2009
 @author: blueAnt
 '''
 
-import hou
-
-class Mirror(hou.Node):
+class Mirror():
     '''
     Mirror surface node
     '''

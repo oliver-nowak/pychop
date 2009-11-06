@@ -4,9 +4,7 @@ Created on Oct 14, 2009
 @author: blueAnt
 '''
 
-import hou
-
-class Hole(hou.Node):
+class Hole():
     '''
     Hole surface node
     '''

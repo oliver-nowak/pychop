@@ -4,9 +4,7 @@ Created on Oct 18, 2009
 @author: blueAnt
 '''
 
-import hou
-
-class Delete(hou.Node):
+class Delete():
     '''
     Delete surface node
     '''

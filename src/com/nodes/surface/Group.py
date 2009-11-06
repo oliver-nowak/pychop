@@ -3,12 +3,11 @@ Created on Oct 1, 2009
 
 @author: Wintermute
 '''
-import hou
 
 if __name__== '__main__':
     pass
 
-class Group(hou.Node):
+class Group():
     '''
     Group surface node
     

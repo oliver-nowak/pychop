@@ -4,9 +4,7 @@ Created on Oct 18, 2009
 @author: blueAnt
 '''
 
-import hou
-
-class Divide(hou.Node):
+class Divide():
     '''
     Divide surface node
     '''

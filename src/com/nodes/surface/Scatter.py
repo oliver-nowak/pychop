@@ -4,9 +4,7 @@ Created on Oct 18, 2009
 @author: blueAnt
 '''
 
-import hou
-
-class Scatter(hou.Node):
+class Scatter():
     '''
     Scatter surface node
     '''
