@@ -56,3 +56,6 @@ class Dissolve():
     def setCurrent(self, isCurrent=False, clearSelected=False):
         return Dissolve.geo.setCurrent(isCurrent, clear_all_selected=clearSelected)
     
+    def setFirstInput(self, _geoNode):
+        return Dissolve.geo.setFirstInput(_geoNode)
+    

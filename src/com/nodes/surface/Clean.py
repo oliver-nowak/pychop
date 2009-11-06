@@ -49,3 +49,6 @@ class Clean():
     
     def setCurrent(self, isCurrent=False, clearSelected=False):
         return Clean.geo.setCurrent(isCurrent, clear_all_selected=clearSelected)
+    
+    def setFirstInput(self, _geoNode):
+        return Clean.geo.setFirstInput(_geoNode)

@@ -62,3 +62,5 @@ class Facet():
     def setCurrent(self, isCurrent=False, clearSelected=False):
         return Facet.geo.setCurrent(isCurrent, clear_all_selected=clearSelected)
     
+    def setFirstInput(self, _geoNode):
+        return Facet.geo.setFirstInput(_geoNode)

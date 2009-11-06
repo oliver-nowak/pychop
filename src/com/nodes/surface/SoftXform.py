@@ -117,3 +117,5 @@ class SoftXform():
     def setCurrent(self, isCurrent=False, clearSelected=False):
         return SoftXform.geo.setCurrent(isCurrent, clear_all_selected=clearSelected)
     
+    def setFirstInput(self, _geoNode):
+        return SoftXform.geo.setFirstInput(_geoNode)

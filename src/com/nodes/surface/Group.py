@@ -128,4 +128,5 @@ class Group():
     def setCurrent(self, isCurrent=False, clearSelected=False):
         return Group.geo.setCurrent(isCurrent, clear_all_selected=clearSelected)
     
-        
+    def setFirstInput(self, _geoNode):
+        return Group.geo.setFirstInput(_geoNode)    

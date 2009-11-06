@@ -54,3 +54,5 @@ class Hole():
     def setCurrent(self, isCurrent=False, clearSelected=False):
         return Hole.geo.setCurrent(isCurrent, clear_all_selected=clearSelected)
     
+    def setFirstInput(self, _geoNode):
+        return Hole.geo.setFirstInput(_geoNode)

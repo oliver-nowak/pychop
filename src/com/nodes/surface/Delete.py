@@ -50,3 +50,6 @@ class Delete():
     def setCurrent(self, isCurrent=False, clearSelected=False):
         return Delete.geo.setCurrent(isCurrent, clear_all_selected=clearSelected)
     
+    def setFirstInput(self, _geoNode):
+        return Delete.geo.setFirstInput(_geoNode)
+    

@@ -47,3 +47,5 @@ class Smooth():
     def setCurrent(self, isCurrent=False, clearSelected=False):
         return Smooth.geo.setCurrent(isCurrent, clear_all_selected=clearSelected)
     
+    def setFirstInput(self, _geoNode):
+        return Smooth.geo.setFirstInput(_geoNode)

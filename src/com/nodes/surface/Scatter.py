@@ -47,4 +47,5 @@ class Scatter():
     def setCurrent(self, isCurrent=False, clearSelected=False):
         return Scatter.geo.setCurrent(isCurrent, clear_all_selected=clearSelected)
     
-    
+    def setFirstInput(self, _geoNode):
+        return Scatter.geo.setFirstInput(_geoNode)

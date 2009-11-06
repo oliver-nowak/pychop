@@ -99,3 +99,5 @@ class PolyExtrude():
     def setCurrent(self, isCurrent=False, clearSelected=False):
         return PolyExtrude.geo.setCurrent(isCurrent, clear_all_selected=clearSelected)
     
+    def setFirstInput(self, _geoNode):
+        return PolyExtrude.geo.setFirstInput(_geoNode)

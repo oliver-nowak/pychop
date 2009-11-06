@@ -59,3 +59,5 @@ class SoftPeak():
     def setCurrent(self, isCurrent=False, clearSelected=False):
         return SoftPeak.geo.setCurrent(isCurrent, clear_all_selected=clearSelected)
     
+    def setFirstInput(self, _geoNode):
+        return SoftPeak.geo.setFirstInput(_geoNode)

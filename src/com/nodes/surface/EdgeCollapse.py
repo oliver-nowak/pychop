@@ -36,6 +36,9 @@ class EdgeCollapse():
     def updatenmls(self, isUpdated=False):
         return EdgeCollapse.geo.parm('updatenmls').set(isUpdated)
     
+    def setFirstInput(self, _geoNode):
+        return EdgeCollapse.geo.setFirstInput(_geoNode)
+    
     def moveToGoodPosition(self):
         return EdgeCollapse.geo.moveToGoodPosition()
     

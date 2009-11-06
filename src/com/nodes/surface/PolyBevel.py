@@ -79,3 +79,5 @@ class PolyBevel():
     def setCurrent(self, isCurrent=False, clearSelected=False):
         return PolyBevel.geo.setCurrent(isCurrent, clear_all_selected=clearSelected)
     
+    def setFirstInput(self, _geoNode):
+        return PolyBevel.geo.setFirstInput(_geoNode)

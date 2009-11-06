@@ -50,3 +50,6 @@ class Divide():
     def setCurrent(self, isCurrent=False, clearSelected=False):
         return Divide.geo.setCurrent(isCurrent, clear_all_selected=clearSelected)
     
+    def setFirstInput(self, _geoNode):
+        return Divide.geo.setFirstInput(_geoNode)
+    

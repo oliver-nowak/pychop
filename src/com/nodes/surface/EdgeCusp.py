@@ -41,4 +41,5 @@ class EdgeCusp():
     def setCurrent(self, isCurrent=False, clearSelected=False):
         return EdgeCusp.geo.setCurrent(isCurrent, clear_all_selected=clearSelected)
         
-        
+    def setFirstInput(self, _geoNode):
+        return EdgeCusp.geo.setFirstInput(_geoNode)    

@@ -62,6 +62,7 @@ class PolyWire():
     def setCurrent(self, isCurrent=False, clearSelected=False):
         return PolyWire.geo.setCurrent(isCurrent, clear_all_selected=clearSelected)
     
-    
+    def setFirstInput(self, _geoNode):
+        return PolyWire.geo.setFirstInput(_geoNode)
         
         

@@ -47,3 +47,5 @@ class Triangulate2D():
     def setCurrent(self, isCurrent=False, clearSelected=False):
         return Triangulate2D.geo.setCurrent(isCurrent, clear_all_selected=clearSelected)
     
+    def setFirstInput(self, _geoNode):
+        return Triangulate2D.geo.setFirstInput(_geoNode)
