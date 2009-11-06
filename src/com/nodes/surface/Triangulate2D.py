@@ -25,6 +25,9 @@ class Triangulate2D(hou.Node):
         Triangulate2D.shapeNode = _shapeNode
         Triangulate2D.geo = Triangulate2D.geoNode.createNode('triangulate2d')
         
+    def __str__(self):
+        return "Triangulate2D surface node"
+        
     def points(self, pattern=None):
         return Triangulate2D.geo.parm('points').set(pattern)
         

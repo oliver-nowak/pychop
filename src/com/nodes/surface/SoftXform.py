@@ -32,6 +32,9 @@ class SoftXform(hou.Node):
         SoftXform.shapeNode = _shapeNode
         SoftXform.geo = SoftXform.geoNode.createNode('softxform')
         
+    def __str__(self):
+        return "SoftXform surface node"
+        
     def group(self, points=None):
         return SoftXform.geo.parm('group').set(points)
     

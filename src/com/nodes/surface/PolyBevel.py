@@ -32,6 +32,9 @@ class PolyBevel(hou.Node):
         PolyBevel.shapeNode = _shapeNode
         PolyBevel.geo = PolyBevel.geoNode.createNode('polybevel')
         
+    def __str__(self):
+        return "PolyBevel surface node"
+        
     def group(self, points=None):
         '''
         group(int)

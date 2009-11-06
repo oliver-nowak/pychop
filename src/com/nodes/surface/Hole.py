@@ -26,6 +26,9 @@ class Hole(hou.Node):
         Hole.shapeNode = _shapeNode
         Hole.geo = Hole.geoNode.createNode('hole')
         
+    def __str__(self):
+        return "Hole surface node"
+        
     def group(self, points=None):
         return Hole.geo.parm('group').set(points)
     

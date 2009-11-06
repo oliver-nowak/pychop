@@ -25,6 +25,9 @@ class Scatter(hou.Node):
         Scatter.shapeNode = _shapeNode
         Scatter.geo = Scatter.geoNode.createNode('scatter')
         
+    def __str__(self):
+        return "Scatter surface node"
+        
     def group(self, pattern=None):
         return Scatter.geo.parm('group').set(pattern)
         

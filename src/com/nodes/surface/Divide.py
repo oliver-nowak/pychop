@@ -25,6 +25,9 @@ class Divide(hou.Node):
         Divide.shapeNode = _shapeNode
         Divide.geo = Divide.geoNode.createNode('divide')
         
+    def __str__(self):
+        return "Divide surface node"
+        
     def group(self, pattern=None):
         return Divide.geo.parm('group').set(pattern)
     

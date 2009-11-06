@@ -25,6 +25,9 @@ class Clean(hou.Node):
         Clean.shapeNode = _shapeNode
         Clean.geo = Clean.geoNode.createNode('clean')
         
+    def __str__(self):
+        return "Clean surface node"
+        
     def delunusedpts(self, isDeleted=False):
         return Clean.geo.parm('delunusedpts').set(isDeleted)
     

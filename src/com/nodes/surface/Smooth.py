@@ -25,6 +25,9 @@ class Smooth(hou.Node):
         Smooth.shapeNode = _shapeNode
         Smooth.geo = Smooth.geoNode.createNode('smooth')
         
+    def __str__(self):
+        return "Smooth surface node"
+        
     def group(self, pattern=None):
         return Smooth.geo.parm('group').set(pattern)
     

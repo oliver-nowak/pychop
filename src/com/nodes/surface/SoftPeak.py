@@ -25,6 +25,9 @@ class SoftPeak(hou.Node):
         SoftPeak.shapeNode = _shapeNode
         SoftPeak.geo = SoftPeak.geoNode.createNode('softpeak')
         
+    def __str__(self):
+        return "SoftPeak surface node"
+        
     def group(self, pattern=None):
         return SoftPeak.geo.parm('group').set(pattern)
         

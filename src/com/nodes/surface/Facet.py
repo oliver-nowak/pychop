@@ -25,6 +25,9 @@ class Facet(hou.Node):
         Facet.shapeNode = _shapeNode
         Facet.geo = Facet.geoNode.createNode('facet')
         
+    def __str__(self):
+        return "Facet surface node"
+        
     def group(self, pattern=None):
         return Facet.geo.parm('group').set(pattern)
     

@@ -25,6 +25,9 @@ class EdgeCusp(hou.Node):
         EdgeCusp.shapeNode = _shapeNode
         EdgeCusp.geo = EdgeCusp.geoNode.createNode('edgecusp')
         
+    def __str__(self):
+        return "EdgeCusp surface node"
+        
     def group(self, pattern=None):
         return EdgeCusp.geo.parm('group').set(pattern)
 

@@ -24,7 +24,11 @@ class EdgeCollapse(hou.Node):
         EdgeCollapse.geoNode = _geoNode
         EdgeCollapse.shapeNode = _shapeNode
         EdgeCollapse.geo = EdgeCollapse.geoNode.createNode('edgecollapse')
-       
+        print 'test ' + str(len(EdgeCollapse.shapeNode.geometry().prims()))
+
+    def __str__(self):
+        return "Edge Collapse surface node"
+    
     def group(self, pattern=None):
         return EdgeCollapse.geo.parm('group').set(pattern)
      

@@ -25,6 +25,9 @@ class Dissolve(hou.Node):
         Dissolve.shapeNode = _shapeNode
         Dissolve.geo = Dissolve.geoNode.createNode('dissolve')
         
+    def __str__(self):
+        return "Dissolve surface node"
+        
     def group(self, pattern=None):
         return Dissolve.geo.parm('group').set(pattern)
     

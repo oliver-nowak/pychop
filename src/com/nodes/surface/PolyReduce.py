@@ -25,6 +25,9 @@ class PolyReduce(hou.Node):
         PolyReduce.shapeNode = _shapeNode
         PolyReduce.geo = PolyReduce.geoNode.createNode('polyreduce')
         
+    def __str__(self):
+        return "PolyReduce surface node"
+        
     def percentage(self, percent=0):
         return PolyReduce.geo.parm('percentage').set(percent)
         

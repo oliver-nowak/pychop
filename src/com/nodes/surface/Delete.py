@@ -25,6 +25,9 @@ class Delete(hou.Node):
         Delete.shapeNode = _shapeNode
         Delete.geo = Delete.geoNode.createNode('delete')
         
+    def __str__(self):
+        return "Delete surface node"
+        
     def group(self, pattern=None):
         return Delete.geo.parm('group').set(pattern)     
 

@@ -26,6 +26,9 @@ class PolyExtrude(hou.Node):
         PolyExtrude.shapeNode = _shapeNode
         PolyExtrude.geo = PolyExtrude.geoNode.createNode('polyextrude')
         
+    def __str__(self):
+        return "PolyExtrude surface node"
+        
     def group(self, points=None):
         return PolyExtrude.geo.parm('group').set(points)
    

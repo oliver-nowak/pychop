@@ -25,6 +25,9 @@ class PolyWire(hou.Node):
         PolyWire.shapeNode = _shapeNode
         PolyWire.geo = PolyWire.geoNode.createNode('polywire')
         
+    def __str__(self):
+        return "PolyWire surface node"
+        
     def group(self, pattern=None):
         return PolyWire.geo.parm('group').set(pattern)
     

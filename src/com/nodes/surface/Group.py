@@ -31,6 +31,9 @@ class Group(hou.Node):
         Group.shapeNode = _shapeNode
         Group.geo = Group.geoNode.createNode('group')
         
+    def __str__(self):
+        return "Group surface node"
+        
     def crname(self, name=None):
         '''
         crname(name)

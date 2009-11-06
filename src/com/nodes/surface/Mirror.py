@@ -26,6 +26,9 @@ class Mirror(hou.Node):
         Mirror.shapeNode = _shapeNode
         Mirror.geo = Mirror.geoNode.createNode('mirror')
         
+    def __str__(self):
+        return "Mirror surface node"
+        
     def group(self, points=None):
         return Mirror.geo.parm('group').set(points)
     
